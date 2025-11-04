@@ -1,0 +1,364 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-attachment: fixed;
+}
+.horror{
+    position: relative;
+    height: 100vh;
+    height: 100dvh;
+    width: 100%;
+    background-image: url(rob-griffin-6mPH67fcaZs-unsplash.jpg);
+    background-size: cover;
+}
+.horror::before{
+    content: '';
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    background: red;
+    opacity: 0.2;
+}
+
+.horror-text {
+    position: sticky;
+    text-align: center;
+    transform: translateY(50vh);
+    transform: translateY(50dvh);
+    color: black;
+    font-size: 20vw;
+}
+#horror-books{
+    position: relative;
+    padding: 70px;
+    min-height: 100vh;
+    display: grid;
+    background: linear-gradient(90deg,red,black);
+    grid-template-columns:repeat(4,1fr) ;
+    animation: blurin linear both;
+    animation-timeline: view();
+}
+@keyframes blurin{
+    0%{
+        filter: blur(5px);
+    }
+     45%,50%,55%,60%,65%{ 
+        filter: blur(0);
+    }
+    100%{
+        filter: blur(0);
+    }
+}
+@media screen and (max-width:768px)
+{
+   #horror-books{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+   } 
+}
+@media screen and (max-width:480px)
+{
+   #horror-books{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+   } 
+}
+#book1{
+    position: relative;
+    margin: 20px;
+    height: 150px;
+    width: 120px;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: red;
+    text-transform: lowercase;
+    display: flex;
+    justify-content: center;
+    transform: skewY(-5deg);
+    background: url(kelsey-curtis-aXYnU9mpit0-unsplash.jpg);
+    background-size: cover;
+}
+#book1::before{
+    content: '';
+    position: absolute;
+    height: 102.5%;
+    width: 16px;
+    background: url(kelsey-curtis-aXYnU9mpit0-unsplash.jpg);
+    transform: translate(-68px, 2px) skewY(-20deg);
+}
+#book1::after{
+    content: '';
+    position: absolute;
+    height: 10px;
+    width: 100%;
+    background: white;
+    transform: translate(-8px,150px) skewX(-60deg);
+}
+
+#book2{
+    position: relative;
+    margin: 20px;
+    height: 150px;
+    width: 120px;
+    display: flex;
+    justify-content: center;
+    transform: skewY(-5deg);
+    background: url(tanya-prodaan-XWNulFxTjtA-unsplash.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.title2{
+    position: fixed;
+    left: 2px;
+    bottom: 15px;
+    color: transparent;
+    background: url(tanya-prodaan-XWNulFxTjtA-unsplash.jpg)no-repeat center center/cover;
+    background-clip: text;
+    -moz-background-clip: text;
+    -webkit-background-clip: text;
+    font-size: 22px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#book2::before{
+    content: '';
+    position: absolute;
+    height: 102.5%;
+    width: 16px;
+    background: url(tanya-prodaan-XWNulFxTjtA-unsplash.jpg);
+    transform: translate(-68px, 2px) skewY(-20deg);
+}
+#book2::after{
+    content: '';
+    position: absolute;
+    height: 10px;
+    width: 100%;
+    background: wheat;
+    transform: translate(-8px,150px) skewX(-60deg);
+}
+
+#book3{
+    position: relative;
+    margin: 20px;
+    height: 150px;
+    width: 120px;
+    display: flex;
+    justify-content: center;
+    transform: skewY(-5deg);
+    background-size: cover;
+}
+#book3::before{
+    content: '';
+    position: absolute;
+    height: 102.5%;
+    width: 16px;
+    background: red;
+    transform: translate(-68px, 2px) skewY(-20deg);
+}
+#book3::after{
+    content: '';
+    position: absolute;
+    height: 10px;
+    width: 100%;
+    background: white;
+    transform: translate(-8px,150px) skewX(-60deg);
+}
+
+#book4{
+    position: relative;
+    margin: 20px;
+    height: 150px;
+    width: 120px;
+    color: brown;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    transform: skewY(-5deg);
+    background: black;
+}
+#book4::before{
+    content: '';
+    position: absolute;
+     height: 102.5%;
+    width: 16px;
+    background: black;
+    transform: translate(-68px, 2px) skewY(-20deg);
+}
+#book4::after{
+    content: '';
+    position: absolute;
+    height: 10px;
+    width: 100%;
+    background: wheat;
+    transform: translate(-8px,150px) skewX(-60deg);
+}
+
+#book5{
+    position: relative;
+    margin: 20px;
+    height: 150px;
+    width: 120px;
+    display: flex;
+    justify-content: center;
+    transform: skewY(-5deg);
+    background-size: cover;
+}
+#book5::before{
+    content: '';
+    position: absolute;
+     height: 102.5%;
+    width: 16px;
+    background: red;
+    transform: translate(-68px, 2px) skewY(-20deg);
+}
+#book5::after{
+    content: '';
+    position: absolute;
+    height: 10px;
+    width: 100%;
+    background: white;
+    transform: translate(-8px,150px) skewX(-60deg);
+}
+
+#book6{
+    margin: 20px;
+    position: relative;
+    height: 150px;
+    width: 120px;
+    display: flex;
+    justify-content: center;
+    transform: skewY(-5deg);
+    background-size: cover;
+}
+#book6::before{
+    content: '';
+    position: absolute;
+     height: 102.5%;
+    width: 16px;
+    background: red;
+    transform: translate(-68px, 2px) skewY(-20deg);
+}
+#book6::after{
+    content: '';
+    position: absolute;
+    height: 10px;
+    width: 100%;
+    background: wheat;
+    transform: translate(-8px,150px) skewX(-60deg);
+}
+
+#book7{
+    position: relative;
+    margin: 20px;
+    height: 150px;
+    width: 120px;
+    display: flex;
+    justify-content: center;
+    transform: skewY(-5deg);
+    background-size: cover;
+}
+#book7::before{
+    content: '';
+    position: absolute;
+     height: 102.5%;
+    width: 16px;
+    background: red;
+    transform: translate(-68px, 2px) skewY(-20deg);
+}
+#book7::after{
+    content: '';
+    position: absolute;
+    height: 10px;
+    width: 94%;
+    background: white;
+    transform: translate(-6px,150px) skewX(-60deg);
+}
+
+#book8{
+    margin: 20px;
+    position: relative;
+    height: 150px;
+    width: 120px;
+    display: flex;
+    justify-content: center;
+    transform: skewY(-5deg);
+    background-size: cover;
+}
+#book8::before{
+    content: '';
+    position: absolute;
+     height: 102.5%;
+    width: 16px;
+    background: red;
+    transform: translate(-68px, 2px) skewY(-20deg);
+}
+#book8::after{
+    content: '';
+    position: absolute;
+    height: 10px;
+    width: 100%;
+    background: wheat;
+    transform: translate(-8px,150px) skewX(-60deg);
+}
+
+.story-container{
+    display: none;
+}
+.show{
+    position: absolute;
+    display: block;
+    height: 100vh;
+    width:100%;
+    background: black;
+    z-index: 200;
+}
+.toast{
+  background: black;
+  width: fit-content;
+  height: max-content;
+  color: whitesmoke;
+  position: absolute;
+  text-align: center;
+  margin-top: 50vh;
+  margin-left: 50vw;
+  translate: -50% -50%;
+  animation: popup linear;
+  animation-timeline: view();
+}
+@keyframes popup{
+  to{
+    z-index: 200;
+  }
+}
+.story{
+    background: rgba(0, 0, 0, 0.349);
+    height: 200px;
+    width: 50%;
+    transform: translate(50%,40vh) skew(20deg,10deg);
+    box-shadow: 0 0 50px 50px black;
+    color: wheat;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    animation-name: scalein;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-direction: alternate;
+}
+@keyframes scalein{
+    0%{
+        transform: scale(2,2) translate(50%,40vh)skew(20deg,10deg);
+    }
+    100%{
+        transform: scale(1,1) translate(50%,40vh)skew(20deg,10deg);
+    }
+}
+.completed{
+    background: rgba(0, 0, 0, 0.164);
+    color: wheat;
+    height: fit-content;
+    width: fit-content;
+    align-self: center;
+}
