@@ -78,17 +78,33 @@
   margin: 20px;
   height: 150px;
   width: 120px;
-  background: red;
+  background: url(mihai-moisa-Djtc1T38-GY-unsplash.jpg);
+  background-size: cover;
   display: flex;
   justify-content: center;
   transform: skewY(-5deg);
+}
+.title9{
+  color: white;
+  text-align: center;
+  transform: translateY(10%);
+}
+.title9em{
+  font-size: xx-large;
+  position: fixed;
+  text-align: center;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  color: rgb(11, 243, 11);
 }
 #book9::before {
   content: "";
   position: absolute;
   height: 102.5%;
   width: 16px;
-  background: red;
+  background: url(mihai-moisa-Djtc1T38-GY-unsplash.jpg);
+  background-size: contain;
   transform: translate(-68px, 2px) skewY(-20deg);
 }
 #book9::after {
@@ -99,23 +115,27 @@
   background: white;
   transform: translate(-8px, 150px) skewX(-60deg);
 }
-
 #book10 {
   position: relative;
   margin: 20px;
   height: 150px;
   width: 120px;
-  background: red;
+  background: url(gala-iv-IuNrjFugD98-unsplash.jpg);
+  background-size: cover;
   display: flex;
   justify-content: center;
   transform: skewY(-5deg);
+}
+.title10{
+  text-align: center;
 }
 #book10::before {
   content: "";
   position: absolute;
    height: 102.5%;
     width: 16px;
-    background: red;
+    background: url(gala-iv-IuNrjFugD98-unsplash.jpg);
+    background-size: cover;
     transform: translate(-68px, 2px) skewY(-20deg);
 }
 #book10::after {
@@ -132,7 +152,9 @@
   margin: 20px;
   height: 150px;
   width: 120px;
-  background: red;
+  background: url(julio-andres-rosario-ortiz-Rvc4OCPCnTI-unsplash.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
   display: flex;
   justify-content: center;
   transform: skewY(-5deg);
@@ -142,7 +164,7 @@
   position: absolute;
    height: 102.5%;
     width: 16px;
-    background: red;
+    background: url(julio-andres-rosario-ortiz-Rvc4OCPCnTI-unsplash.jpg);
     transform: translate(-68px, 2px) skewY(-20deg);
 }
 #book11::after {
@@ -159,7 +181,8 @@
   margin: 20px;
   height: 150px;
   width: 120px;
-  background: red;
+  background: url(darius-F8E2tks5N04-unsplash.jpg);
+  background-size: cover;
   display: flex;
   justify-content: center;
   transform: skewY(-5deg);
@@ -167,10 +190,10 @@
 #book12::before {
   content: "";
   position: absolute;
-   height: 102.5%;
-    width: 16px;
-    background: red;
-    transform: translate(-68px, 2px) skewY(-20deg);
+  height: 102.5%;
+  width: 16px;
+  background: url(darius-F8E2tks5N04-unsplash.jpg);
+  transform: translate(-68px, 2px) skewY(-20deg);
 }
 #book12::after {
   content: "";
@@ -186,18 +209,31 @@
   margin: 20px;
   height: 150px;
   width: 120px;
-  background: red;
+  background: url(fadi-xd-I4dR572y7l0-unsplash.jpg);
+  background-size: cover;
   display: flex;
   justify-content: center;
   transform: skewY(-5deg);
 }
+.title13{
+  transform: translateY(60%);
+  font-weight: lighter;
+   background: url(kelsey-curtis-aXYnU9mpit0-unsplash.jpg) no-repeat center center/cover;
+  color: transparent;
+  -moz-background-clip: text;
+  -webkit-background-clip: text;
+  background-clip: text;
+  text-transform: lowercase;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
 #book13::before {
   content: "";
   position: absolute;
-   height: 102.5%;
-    width: 16px;
-    background: red;
-    transform: translate(-68px, 2px) skewY(-20deg);
+  height: 102.5%;
+  width: 16px;
+  background: url(fadi-xd-I4dR572y7l0-unsplash.jpg);
+  background-size: cover;
+  transform: translate(-68px, 2px) skewY(-20deg);
 }
 #book13::after {
   content: "";
@@ -213,17 +249,25 @@
   position: relative;
   height: 150px;
   width: 120px;
-  background: red;
+  background: url(roberta-sorge-IywM7AQTZcM-unsplash.jpg);
+  background-size: cover;
   display: flex;
   justify-content: center;
   transform: skewY(-5deg);
+}
+.title14{
+  background: url(jeong-yejune-yscYtKfSH7g-unsplash.jpg) no-repeat center center/cover;
+  color: transparent;
+  -moz-background-clip: text;
+  -webkit-background-clip: text;
+  background-clip: text;
 }
 #book14::before {
   content: "";
   position: absolute;
    height: 102.5%;
     width: 16px;
-    background: red;
+    background: rgb(241, 40, 40);
     transform: translate(-68px, 2px) skewY(-20deg);
 }
 #book14::after {
@@ -240,17 +284,27 @@
   margin: 20px;
   height: 150px;
   width: 120px;
-  background: red;
+  background: url(copycat-fragrances-KVr-EQndQhM-unsplash.jpg);
+  background-size: cover;
   display: flex;
   justify-content: center;
   transform: skewY(-5deg);
+}
+.title15{
+  background: url(mubariz-mehdizadeh-aNHKAogpTRU-unsplash.jpg) no-repeat center center/cover;
+  color: transparent;
+  -moz-background-clip: text;
+  -webkit-background-clip: text;
+  background-clip: text;
+  transform: translateY(10%);
+  font-size: larger;
 }
 #book15::before {
   content: "";
   position: absolute;
    height: 102.5%;
     width: 16px;
-    background: red;
+    background: url(copycat-fragrances-KVr-EQndQhM-unsplash.jpg);
     transform: translate(-68px, 2px) skewY(-20deg);
 }
 #book15::after {
@@ -267,17 +321,35 @@
   position: relative;
   height: 150px;
   width: 120px;
-  background: red;
+  background: url(mrika-selimi-kWNQy01CXCI-unsplash.jpg);
+  background-size: cover;
   display: flex;
   justify-content: center;
   transform: skewY(-5deg);
+}
+.title16{
+  position: fixed;
+  right: 0;
+  top: 25%;
+  font-size: 12px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+}
+.title16span{
+  font-weight: bolder;
+  font-size: 25px;
+  position: fixed;
+  right: 0;
+  top: 29%;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: darkgreen;
 }
 #book16::before {
   content: "";
   position: absolute;
    height: 102.5%;
     width: 16px;
-    background: red;
+    background: rgb(6, 8, 6);
     transform: translate(-68px, 2px) skewY(-20deg);
 }
 #book16::after {

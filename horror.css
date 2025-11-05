@@ -169,12 +169,21 @@
     margin: 20px;
     height: 150px;
     width: 120px;
-    color: brown;
-    text-align: center;
     display: flex;
     justify-content: center;
     transform: skewY(-5deg);
     background: black;
+    background: url(isaac-quesada-jVLXiFNSzdU-unsplash.jpg);
+}
+.title4{
+    color: brown;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: 50%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: larger;
 }
 #book4::before{
     content: '';
@@ -228,6 +237,7 @@
     display: flex;
     justify-content: center;
     transform: skewY(-5deg);
+    background: url(luiza-braun-AbchCImfTnQ-unsplash.jpg);
     background-size: cover;
 }
 #book6::before{
@@ -235,7 +245,8 @@
     position: absolute;
      height: 102.5%;
     width: 16px;
-    background: red;
+    background: url(luiza-braun-AbchCImfTnQ-unsplash.jpg);
+    background-size: cover;
     transform: translate(-68px, 2px) skewY(-20deg);
 }
 #book6::after{
@@ -255,7 +266,19 @@
     display: flex;
     justify-content: center;
     transform: skewY(-5deg);
+    background: url(420aperture-QOOMdMfE4sM-unsplash.jpg);
     background-size: cover;
+}
+.title7{
+    text-align: center;
+    transform: translateY(50%);
+    color: transparent;
+    background: url(jeong-yejune-yscYtKfSH7g-unsplash.jpg) center center/cover;
+    background-clip: text;
+    -moz-background-clip: text;
+    -webkit-background-clip: text;
+    text-transform: uppercase;
+    font-family: cursive;
 }
 #book7::before{
     content: '';
@@ -271,7 +294,7 @@
     height: 10px;
     width: 94%;
     background: white;
-    transform: translate(-6px,150px) skewX(-60deg);
+    transform: translate(-8px,150px) skewX(-60deg);
 }
 
 #book8{
@@ -282,6 +305,7 @@
     display: flex;
     justify-content: center;
     transform: skewY(-5deg);
+    background: url(david-trinks-RWDwbpmH5oI-unsplash.jpg);
     background-size: cover;
 }
 #book8::before{
@@ -289,7 +313,8 @@
     position: absolute;
      height: 102.5%;
     width: 16px;
-    background: red;
+    background: url(david-trinks-RWDwbpmH5oI-unsplash.jpg);
+    background: rgba(0, 0, 0, 0.274);
     transform: translate(-68px, 2px) skewY(-20deg);
 }
 #book8::after{
