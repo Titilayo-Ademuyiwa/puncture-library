@@ -1,7 +1,7 @@
-const SeeGenres = () => {
+const SeeMore = () => {
     document.querySelector(".lists").classList.add("open");
 };
-const CloseGenres = () => {
+const CloseMore = () => {
     document.querySelector(".lists").classList.remove("open");
 };
 
@@ -33,7 +33,7 @@ const epilogues = {
     book25 : "When the waves threatened to pull him under, he remembered the words his grandmother spoke. Faith could anchor even the most restless soul.",
     book26 : "They were ordinary people, facing ordinary struggles. Yet in moments of despair, the extraordinary became visible.",
     book27 : "Life is fleeting, yet something eternal burns within each soul. The challenge is learning how to see it, even when shadows fall.",
-    book28 : "A small act of kindness, a whispered prayer, a heart willing to believe—sometimes faith begins with the smallest seeds.",
+    book28 : "A small act of kindness, a whispered prayer, a heart willing to believe-sometimes faith begins with the smallest seeds.",
     book29 : "He had lost his way, wandering through life without purpose. Then a simple act of kindness reminded him: even the lost are seen.",
     book30 : "Each night, she knelt by her bedside, hands trembling, heart open. And though no answer came immediately, hope remained.",
     book31 : "Even in the darkest alley, a single candle can illuminate the path. And sometimes, that light comes from the most unexpected places.",
@@ -41,6 +41,7 @@ const epilogues = {
 };
 const books = document.querySelectorAll(".book");
 const storyContainer = document.querySelector(".story-container");
+const readBooks = document.querySelector(".read-books");
 books.forEach(book => {
     book.addEventListener("click", () => {
         const bookId = book.id;
@@ -56,3 +57,5 @@ const EpilogueCompleted = () => {
     document.querySelector(".books").style.display = "grid";
     document.querySelector(".story-container").classList.remove("show");
 };
+
+ 

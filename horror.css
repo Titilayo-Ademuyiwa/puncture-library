@@ -60,8 +60,11 @@
 @media screen and (max-width:480px)
 {
    #horror-books{
-    display: grid;
-    grid-template-columns: repeat(1,1fr);
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
    } 
 }
 #book1{
@@ -115,8 +118,6 @@
     color: transparent;
     background: url(tanya-prodaan-XWNulFxTjtA-unsplash.jpg)no-repeat center center/cover;
     background-clip: text;
-    -moz-background-clip: text;
-    -webkit-background-clip: text;
     font-size: 22px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -145,14 +146,16 @@
     display: flex;
     justify-content: center;
     transform: skewY(-5deg);
+    background: url(danny-lines-00MAcnHWQms-unsplash.jpg);
     background-size: cover;
+    color: white;
 }
 #book3::before{
     content: '';
     position: absolute;
     height: 102.5%;
     width: 16px;
-    background: red;
+    background: url(danny-lines-00MAcnHWQms-unsplash.jpg);
     transform: translate(-68px, 2px) skewY(-20deg);
 }
 #book3::after{
@@ -210,14 +213,20 @@
     display: flex;
     justify-content: center;
     transform: skewY(-5deg);
+    background: url(justus-menke-Wn8fHmOxAm8-unsplash.jpg);
     background-size: cover;
+}
+.title5{
+    background: rgba(245, 245, 245, 0.527);
+    height: fit-content;
+    color: black;
 }
 #book5::before{
     content: '';
     position: absolute;
      height: 102.5%;
     width: 16px;
-    background: red;
+    background: url(justus-menke-Wn8fHmOxAm8-unsplash.jpg);
     transform: translate(-68px, 2px) skewY(-20deg);
 }
 #book5::after{
@@ -275,8 +284,6 @@
     color: transparent;
     background: url(jeong-yejune-yscYtKfSH7g-unsplash.jpg) center center/cover;
     background-clip: text;
-    -moz-background-clip: text;
-    -webkit-background-clip: text;
     text-transform: uppercase;
     font-family: cursive;
 }
@@ -331,53 +338,36 @@
 }
 .show{
     position: absolute;
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
     height: 100vh;
     width:100%;
     background: black;
     z-index: 200;
-}
-.toast{
-  background: black;
-  width: fit-content;
-  height: max-content;
-  color: whitesmoke;
-  position: absolute;
-  text-align: center;
-  margin-top: 50vh;
-  margin-left: 50vw;
-  translate: -50% -50%;
-  animation: popup linear;
-  animation-timeline: view();
-}
-@keyframes popup{
-  to{
-    z-index: 200;
-  }
+    transform-style: preserve-3d;
 }
 .story{
-    background: rgba(0, 0, 0, 0.349);
-    height: 200px;
+    background: red;
+    height: fit-content;
     width: 50%;
-    transform: translate(50%,40vh) skew(20deg,10deg);
+    transform-style: preserve-3d;
+    transform:perspective(1000px) rotateX(40deg) translateZ(100px);
     box-shadow: 0 0 50px 50px black;
-    color: wheat;
+    color: black;
     display: flex;
     text-align: center;
     flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    animation-name: scalein;
-    animation-duration: 3s;
-    animation-iteration-count: 1;
-    animation-direction: alternate;
+    animation: scalein 2s linear;
 }
 @keyframes scalein{
     0%{
-        transform: scale(2,2) translate(50%,40vh)skew(20deg,10deg);
+        transform:perspective(1000px) rotateX(0deg) translateZ(100px) scale(.5,.5);
     }
     100%{
-        transform: scale(1,1) translate(50%,40vh)skew(20deg,10deg);
+        transform:perspective(1000px) rotateX(40deg) translateZ(100px) scale(1,1);
     }
 }
 .completed{
@@ -386,4 +376,5 @@
     height: fit-content;
     width: fit-content;
     align-self: center;
+    cursor: pointer;
 }

@@ -26,10 +26,7 @@
   color: transparent;
   transform: translateY(50vh);
   transform: translateY(50dvh);
-  background: url(andreas-gabler-XEW_Wd4240c-unsplash.jpg) no-repeat center
-    center/cover;
-  -moz-background-clip: text;
-  -webkit-background-clip: text;
+  background: url(andreas-gabler-XEW_Wd4240c-unsplash.jpg) no-repeat center center/cover;
   background-clip: text;
   font-size: 20vw;
 }
@@ -69,8 +66,11 @@
 }
 @media screen and (max-width: 480px) {
   #romance-books {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
   }
 }
 #book9 {
@@ -146,25 +146,26 @@
   background: wheat;
   transform: translate(-8px, 150px) skewX(-60deg);
 }
-
 #book11 {
   position: relative;
   margin: 20px;
   height: 150px;
   width: 120px;
-  background: url(julio-andres-rosario-ortiz-Rvc4OCPCnTI-unsplash.jpg);
+  background: url(shayna-douglas-EGn1FptbNUc-unsplash.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
   justify-content: center;
   transform: skewY(-5deg);
+  color: rgb(241, 241, 65);
+  text-align: center;
 }
 #book11::before {
   content: "";
   position: absolute;
    height: 102.5%;
     width: 16px;
-    background: url(julio-andres-rosario-ortiz-Rvc4OCPCnTI-unsplash.jpg);
+    background: url(shayna-douglas-EGn1FptbNUc-unsplash.jpg);
     transform: translate(-68px, 2px) skewY(-20deg);
 }
 #book11::after {
@@ -172,7 +173,7 @@
   position: absolute;
   height: 10px;
   width: 100%;
-  background: white;
+  background: gainsboro;
   transform: translate(-8px, 150px) skewX(-60deg);
 }
 
@@ -186,6 +187,14 @@
   display: flex;
   justify-content: center;
   transform: skewY(-5deg);
+}
+.title12{
+  position: fixed;
+  color: azure;
+  background: black;
+  height: fit-content;
+  width: 100%;
+  top: 0;
 }
 #book12::before {
   content: "";
@@ -220,8 +229,6 @@
   font-weight: lighter;
    background: url(kelsey-curtis-aXYnU9mpit0-unsplash.jpg) no-repeat center center/cover;
   color: transparent;
-  -moz-background-clip: text;
-  -webkit-background-clip: text;
   background-clip: text;
   text-transform: lowercase;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -258,8 +265,6 @@
 .title14{
   background: url(jeong-yejune-yscYtKfSH7g-unsplash.jpg) no-repeat center center/cover;
   color: transparent;
-  -moz-background-clip: text;
-  -webkit-background-clip: text;
   background-clip: text;
 }
 #book14::before {
@@ -293,8 +298,6 @@
 .title15{
   background: url(mubariz-mehdizadeh-aNHKAogpTRU-unsplash.jpg) no-repeat center center/cover;
   color: transparent;
-  -moz-background-clip: text;
-  -webkit-background-clip: text;
   background-clip: text;
   transform: translateY(10%);
   font-size: larger;
@@ -365,41 +368,35 @@
 }
 .show {
   position: absolute;
-  display: block;
+  display: flex;
   height: 100vh;
   width: 100%;
   background: red;
-  border-top-left-radius: 50%;
-  border-top-right-radius: 50%;
+  justify-items: center;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
   z-index: 200;
   text-align: center;
   font-size: 3vw;
 } 
 .story{
     background: pink;
-    height: 200px;
+    height: fit-content;
     width: 50%;
-    transform: translate(50%,40vh);
-    box-shadow: -20px 30px 50px 50px pink;
+    box-shadow: 0 0 50px 50px pink;
     color: red;
     display: flex;
     text-align: center;
     flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    animation-name: zoomin;
-    animation-direction: alternate-reverse;
-    animation-iteration-count: 1;
-    animation-duration: 3s;
+    animation: zoomin 2s linear;
 } 
 @keyframes zoomin{
     from{
-        transform: translate(50%,40vh);
-        filter: blur(0);
+        filter: blur(10px);
     }
     to{
-        transform: translate(-100px,-100px);
-        filter: blur(10px);
+        filter: blur(0);
     }
 }
 .completed{
@@ -408,22 +405,5 @@
     height: fit-content;
     width: fit-content;
     align-self: center;
-}
-.toast{
-  background: red;
-  width: fit-content;
-  height: max-content;
-  color: whitesmoke;
-  position: absolute;
-  text-align: center;
-  margin-top: 50vh;
-  margin-left: 50vw;
-  translate: -50% -50%;
-  animation: popup linear;
-  animation-timeline: view();
-}
-@keyframes popup{
-  to{
-    z-index: 200;
-  }
+    cursor: pointer;
 }

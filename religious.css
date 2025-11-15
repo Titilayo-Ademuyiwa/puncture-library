@@ -28,8 +28,6 @@
     transform: translateY(50dvh);
     color: transparent;
     background: url(ashkan-forouzani-sfmsMZ7ezXw-unsplash.jpg) no-repeat center center/cover;
-    -moz-background-clip: text;
-    -webkit-background-clip: text;
     background-clip: text;
     font-size: 20vw;
 }
@@ -39,7 +37,7 @@
     min-height: 100vh;
     padding: 70px;
     display: grid;
-    /* background: grey; */
+    background: green;
     grid-template-columns: repeat(4, 1fr);
     animation: blurin linear both;
     animation-timeline: view();
@@ -72,8 +70,11 @@
 
 @media screen and (max-width:480px) {
     #religious-books {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-items: center;
     }
 }
 
@@ -82,18 +83,23 @@
     margin: 20px;
     height: 150px;
     width: 120px;
+    background: url(dewang-gupta-Mu3T3DmvQQw-unsplash.jpg);
     background-size: cover;
     display: flex;
     justify-content: center;
     transform: skewY(-5deg);
 }
-
+.title25{
+    color: rgb(247, 22, 239);
+    bottom: 0;
+    position: fixed;
+}
 #book25::before {
     content: '';
     position: absolute;
      height: 102.5%;
     width: 16px;
-    background: red;
+    background: url(dewang-gupta-Mu3T3DmvQQw-unsplash.jpg);
     transform: translate(-68px, 2px) skewY(-20deg);
 }
 
@@ -102,7 +108,7 @@
     position: absolute;
     height: 10px;
     width: 100%;
-    background: white;
+    background: wheat;
     transform: translate(-8px, 150px) skewX(-60deg);
 }
 
@@ -111,18 +117,23 @@
     margin: 20px;
     height: 150px;
     width: 120px;
+    background:url(aidah-kiirya-yjHL_J9alok-unsplash.jpg) ;
     background-size: cover;
     display: flex;
     justify-content: center;
     transform: skewY(-5deg);
 }
-
+.title26{
+    text-align: center;
+    color: white;
+    transform: translateY(8%);
+}
 #book26::before {
     content: '';
     position: absolute;
     height: 102.5%;
     width: 16px;
-    background: red;
+    background:url(aidah-kiirya-yjHL_J9alok-unsplash.jpg) ;
     transform: translate(-68px, 2px) skewY(-20deg);
 }
 
@@ -140,18 +151,22 @@
     margin: 20px;
     height: 150px;
     width: 120px;
-    background-size: cover;
+    background: url(cullan-smith-BdTtvBRhOng-unsplash.jpg);
+    background-size: contain;
     display: flex;
     justify-content: center;
     transform: skewY(-5deg);
 }
-
+.title27{
+    color: wheat;
+    transform: translateY(50%);
+}
 #book27::before {
     content: '';
     position: absolute;
      height: 102.5%;
     width: 16px;
-    background: red;
+    background: url(cullan-smith-BdTtvBRhOng-unsplash.jpg);
     transform: translate(-68px, 2px) skewY(-20deg);
 }
 
@@ -160,7 +175,7 @@
     position: absolute;
     height: 10px;
     width: 100%;
-    background: white;
+    background: wheat;
     transform: translate(-8px, 150px) skewX(-60deg);
 }
 
@@ -169,18 +184,22 @@
     margin: 20px;
     height: 150px;
     width: 120px;
-    background-size: cover;
+    background: url(adam-hornyak-tD8NE0lo42U-unsplash.jpg);
+    background-size: contain;
     display: flex;
     justify-content: center;
     transform: skewY(-5deg);
 }
-
+.title28{
+    color: burlywood;
+    transform: translateY(50%);
+}
 #book28::before {
     content: '';
     position: absolute;
      height: 102.5%;
     width: 16px;
-    background: red;
+    background: url(adam-hornyak-tD8NE0lo42U-unsplash.jpg);
     transform: translate(-68px, 2px) skewY(-20deg);
 }
 
@@ -198,18 +217,27 @@
     margin: 20px;
     height: 150px;
     width: 120px;
+    background: url(menor-degu-H6e1J1XW4Fw-unsplash.jpg);
     background-size: cover;
     display: flex;
     justify-content: center;
     transform: skewY(-5deg);
 }
-
+.title29{
+    position: fixed;
+    bottom: 0%;
+    text-align: center;
+    color: gray;
+    font-weight: bolder;
+    background: white;
+    height: fit-content;
+}
 #book29::before {
     content: '';
     position: absolute;
      height: 102.5%;
     width: 16px;
-    background: red;
+    background: url(menor-degu-H6e1J1XW4Fw-unsplash.jpg);
     transform: translate(-68px, 2px) skewY(-20deg);
 }
 
@@ -218,7 +246,7 @@
     position: absolute;
     height: 10px;
     width: 100%;
-    background: white;
+    background: wheat;
     transform: translate(-8px, 150px) skewX(-60deg);
 }
 
@@ -227,18 +255,22 @@
     position: relative;
     height: 150px;
     width: 120px;
-    background-size: cover;
+    background:url(sam-moghadam-gH5yrgiw4Xw-unsplash.jpg) ;
+    background-size: contain;
     display: flex;
     justify-content: center;
     transform: skewY(-5deg);
 }
-
+.title30{
+    transform: translateY(40%);
+    color: white;
+}
 #book30::before {
     content: '';
     position: absolute;
      height: 102.5%;
     width: 16px;
-    background: red;
+    background:url(sam-moghadam-gH5yrgiw4Xw-unsplash.jpg) ;
     transform: translate(-68px, 2px) skewY(-20deg);
 }
 
@@ -256,18 +288,19 @@
     margin: 20px;
     height: 150px;
     width: 120px;
+    background:url(sixteen-miles-out-3CA_-xcpulY-unsplash.jpg) ;
     background-size: cover;
     display: flex;
     justify-content: center;
     transform: skewY(-5deg);
+    color: rgb(250, 250, 4);
 }
-
 #book31::before {
     content: '';
     position: absolute;
      height: 102.5%;
     width: 16px;
-    background: red;
+    background: url(sixteen-miles-out-3CA_-xcpulY-unsplash.jpg);
     transform: translate(-68px, 2px) skewY(-20deg);
 }
 
@@ -276,7 +309,7 @@
     position: absolute;
     height: 10px;
     width: 100%;
-    background: white;
+    background: wheat;
     transform: translate(-8px, 150px) skewX(-60deg);
 }
 
@@ -286,19 +319,24 @@
     height: 150px;
     width: 120px;
     display: flex;
+    background: url(boluwatife-oguns--Sh6nXFK1VU-unsplash.jpg);
+    background-size: cover;
     justify-content: center;
     transform: skewY(-5deg);
 }
-
+.title32{
+    font-weight: bolder;
+    color: antiquewhite;
+    transform: translateY(75%);
+}
 #book32::before {
     content: '';
     position: absolute;
      height: 102.5%;
     width: 16px;
-    background: red;
+    background: url(boluwatife-oguns--Sh6nXFK1VU-unsplash.jpg);
     transform: translate(-68px, 2px) skewY(-20deg);
 }
-
 #book32::after {
     content: '';
     position: absolute;
@@ -312,47 +350,36 @@
 }
 .show{
     position: absolute;
-    display: block;
+    display: flex;
     height: 100vh;
     width:100%;
-    background: rgb(243, 7, 7);
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    background: rgb(59, 59, 1);
+    background: linear-gradient(10deg,white, blue);
     z-index: 200;
-}
-.toast{
-  background: skyblue;
-  width: fit-content;
-  height: max-content;
-  color: whitesmoke;
-  position: absolute;
-  text-align: center;
-  margin-top: 50vh;
-  margin-left: 50vw;
-  translate: -50% -50%;
-  animation: popup linear;
-  animation-timeline: view();
-}
-@keyframes popup{
-  to{
-    z-index: 200;
-  }
+    transform-style: preserve-3d;
 }
 .story{
-    background: black;
-    height: 200px;
+    height: fit-content;
     width: 50%;
-    transform: translate(50%,40vh);
-    box-shadow: -20px 30px 50px 50px black;
-    color: black;
+    color: white;
     display: flex;
     text-align: center;
     flex-direction: column;
-    justify-content: center;
-    align-content: center;
+    transform-style: preserve-3d;
+    animation:reversing 4s forwards;
+}
+@keyframes reversing{
+    from{filter: blur(5px);}
 }
 .completed{
-    background: red;
+    background: rgb(117, 117, 247);
     color: azure;
     height: fit-content;
     width: fit-content;
     align-self: center;
+    cursor: pointer;
 }

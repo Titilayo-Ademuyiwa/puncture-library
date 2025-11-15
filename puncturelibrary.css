@@ -4,202 +4,286 @@
     box-sizing: border-box;
 }
 body{
-    background: red;
+    background: white;
 }
-.genre{
-    right: 10px;
-    top: 10px;
-    position: fixed;
+.top{
+    position: sticky;
+    top: 0;
+    left: 0;
+    padding: 0;
+    margin: 0;
+    background: rgb(248, 7, 248);
+    height: 200px;
+    width: 100%;
+    z-index: 1;
+}
+.since{
+    background: purple;
+    text-align: center;
+    color: pink;
+}
+.lists{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.list{
+    list-style: none;
+}
+.list-link{
+    text-decoration: none;
+    color: whitesmoke;
+}
+.bottom-top{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 70px;
+}
+.quote{
+    height: 150px;
+    width: 150px;
+    background: black;
+    border-radius: 50%;
+    position: relative;
+    margin-top: -60px;
+    text-align: center;
+    color: white;
+}
+.quote-text{
+   padding-top: 35px; 
+}
+.left-curve{
+    height: 150px;
+    width: 150px;
+    position: absolute;
+    border-left: -5px;
+    border-top: 0;
+    border-bottom: 0;
+    border-right: 0;
+    border-style: solid;
+    border-color: rgb(243, 13, 243);
+    border-radius: 50%;
+    animation: spin-left 3s linear infinite;
+}
+@keyframes spin-left{
+    from{transform: rotate(0deg);}
+    to{transform: rotate(360deg);}
+}
+.right-curve{
+    height: 150px;
+    width: 150px;
+    position: absolute;
+    border-left: 0;
+    border-top: 0;
+    border-bottom:0;
+    border-right: -5px;
+    border-style: solid;
+    border-color:white;
+    border-radius: 50%;
+    animation: spin-right 3s linear infinite;
+}
+@keyframes spin-right{
+    from{transform: rotate(360deg);}
+    to{transform: rotate(0deg);}
+}
+.middle{
+    display: flex;
+    justify-content: space-between;
+}
+.middle-left{
+    font-weight: bolder;
+    color: rgb(248, 7, 248);
+    font-size: 10vw;
+    font-family: cursive;
+}
+.middle-right{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    padding: 50px;
+    gap: 30px;
+}
+.books{
+    background: url(sixteen-miles-out-3CA_-xcpulY-unsplash.jpg) center center/cover;
+    color: transparent;
+    background-clip: text;
     opacity: 0;
-    cursor: pointer;
-    z-index: 200;
+    text-align: center;
+    animation: drop 3s forwards;
+}
+@keyframes drop{
+    from{transform: translateY(-100%);}
+    to{transform: translateY(0); opacity: 1;}
+}
+.genre-link{
+    text-decoration: none;
+    text-align: center;
+}
+.link-text{
+    font-style: oblique;
+    font-family: Arial, Helvetica, sans-serif;
+    transform: translateY(60px);
+}
+.horror-link{
+    /* position: absolute; */
+    height: 150px;
+    width: 100px;
+    background: black;
+    color: red;
+    border-radius: 15px;
+    animation: slide-up1 2s forwards;
+    opacity: 0;
+}
+@keyframes slide-up1{
+    from{transform: translateY(100%);}
+    to{opacity: 1; transform: translateY(0);}
+}
+.horror-link::after{
+    position: absolute;
+    content: '';
+    height: calc(100% + 10px);
+    width: calc(100% + 10px);
+    background-size: 600%;
+    background: linear-gradient(45deg,black,red);
+    left: -5px;
+    top: -5px;
+    z-index: -1;
+    animation: revolve 3s linear infinite;
+    border-radius: 10%;
+    filter: blur(2px);
+}
+@keyframes revolve{
+    0%{opacity: 1;}
+    50%{opacity: .5;}
+    100%{opacity: 1;}
+}
+.romance-link{
+    height: 150px;
+    width: 100px;
+    background: black;
+    color: green;
+    border-radius: 15px;
+    animation: slide-up2 2s forwards;
+    animation-delay: 500ms;
+    opacity: 0;
+}
+@keyframes slide-up2{
+    from{transform: translateY(100%);}
+    to{opacity: 1; transform: translateY(0);}
+}
+.romance-link::after{
+    position: absolute;
+    content: '';
+    height: calc(100% + 10px);
+    width: calc(100% + 10px);
+    background-size: 600%;
+    background: rgb(14, 236, 14);
+    left: -5px;
+    top: -5px;
+    z-index: -1;
+    animation: revolve 3s linear infinite;
+    border-radius: 10%;
+    filter: blur(2px);
+}
+.religious-link{
+    height: 150px;
+    width: 100px;
+    background: black;
+    color: rgb(6, 6, 253);
+    border-radius: 15px;
+    animation: slide-up3 2s forwards;
+    animation-delay: 1000ms;
+    opacity: 0;
+}
+@keyframes slide-up3{
+    from{transform: translateY(100%);}
+    to{opacity: 1; transform: translateY(0);}
+}
+.religious-link::after{
+    position: absolute;
+    content: '';
+    height: calc(100% + 10px);
+    width: calc(100% + 10px);
+    background-size: 600%;
+    background: linear-gradient(90deg,blue,white,blue);
+    left: -5px;
+    top: -5px;
+    z-index: -1;
+    animation: revolve 3s linear infinite;
+    border-radius: 10%;
+    filter: blur(2px);
+}
+.motivational-link{
+    height: 150px;
+    width: 100px;
+    background: black;
+    color: white;
+    border-radius: 15px;
+    animation: slide-up4 2s forwards;
+    opacity: 0;
+    animation-delay: 1500ms;
+}
+@keyframes slide-up4{
+    from{transform: translateY(100%);}
+    to{opacity: 1; transform: translateY(0);}
+}
+.motivational-link::after{
+    position: absolute;
+    content: '';
+    height: calc(100% + 10px);
+    width: calc(100% + 10px);
+    background-size: 600%;
+    background: blue;
+    left: -5px;
+    top: -5px;
+    z-index: -1;
+    animation: revolve 3s linear infinite;
+    border-radius: 10%;
+    filter: blur(2px);
+}
+.bottom{
+    height: 200px;
+}
+.bottom-border{
+    padding-top: 70px;
+    display: flex;
+    justify-content: space-between;
 }
 .close{
     position: absolute;
     right: 10px;
     z-index: 200;
     opacity: 0;
-    color: white;
     cursor: pointer;
 }
-.lists{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    animation: slidein-y 2s forwards;
-    animation-delay: 2.5s;
-    opacity: 0;
-}
-@keyframes slidein-y{
-   from{
-    transform: translateY(-100%);
-   }
-   to{
-    transform: translateY(0);
-    opacity: 1;
-   }
-}
-.list-link{
-    text-decoration: none;
-    color: white;
-}
-.list{
-    list-style: none;
-}
-.welcome{
-    font-size: 15vw;
-    text-align: center;
-    align-items: center;
-    letter-spacing: 2vw;
-    background: url(susan-q-yin-2JIvboGLeho-unsplash.jpg)  no-repeat center center/cover;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    transform-style: preserve-3d;
-    position: relative;
-    animation-name: slidein-x;
-    animation-duration: 3s;
-    animation-iteration-count: 1;
-}
-@keyframes slidein-x{
-    from{
-        transform: translateX(100%);
-    }
-    to{
-        transform: translateX(0);
-    }
-}
-.name{
-    font-size:150px ;
-    animation-name: leftright;
-    animation-duration: 3s;
-    animation-iteration-count: 1;
-    color: rgba(255, 255, 255, 0.678);
-    margin-top: 5vh;
-    float: left;
-}
-@keyframes leftright{
-    from{
-        transform: translateX(-100%);
-    }
-    to{
-        transform: translateX(0);
-    }
-}
-.button-container{
+.more{
+    background: white;
+    height: 18px;
+    width: 25px;
+    right: 10px;
+    top: 0;
     position: fixed;
-    bottom: 30px;
-    left: 50%;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 200;
 }
-.button{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    transform-style: preserve-3d;
-    animation: circular 10s linear infinite;
-}
-@keyframes circular{
-    0%{
-        transform: rotateY(0deg) perspective(1000px) rotate(0deg);
+@media screen and (max-width:650px){
+    .top{
+        position: static;
+        height: 100vh;
+        height: 100dvh;
+        background: white;
     }
-    100%{
-        transform: rotateY(360deg) perspective(1000px) rotate(0deg);
+    .bottom-top{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-items: center;
+        margin-top: 10vh;
+        gap: 15vh;
     }
-}
-.btn{
-    position: absolute;
-    font-size: 30px;
-    text-align: center;
-    transform-style: preserve-3d;
-    border-radius: 50%;
-    perspective: 100px;
-    background: red;
-    color: white;
-    transform: rotateY(calc(var(--i) * 72deg)) translateZ(100px);
-}
-
-.background-book{
-    display: flex;
-    flex-direction: row;
-    margin-top: 25vh;
-    margin-right: 50px;
-    float: right;
-}
-.note{
-    color: white;
-}
-.forever{
-    color: white;
-}
-.background-book1{
-    height: 150px;
-    width: 100px;
-    background: red;
-    transform:skewY(30deg);
-    align-items: center;
-}
-.background-book1::before{
-    content: '';
-    position: absolute;
-    height: 100%;
-    width: 20px;
-    background: red;
-    transform:translate(-20px, 10px) skewY(-50deg);
-}
-.background-book1::after{
-    content: '';
-    position: absolute;
-    height: 20px;
-    width: 100%;
-    background: white;
-    transform:translate(-85px, 42px) skewX(-40deg);
-}
-.background-book2{
-    height: 150px;
-    width: 100px;
-    background: red;
-    transform:skewY(-30deg);
-}
-.background-book2::before{
-    content: '';
-    position: absolute;
-    height: 100%;
-    width: 20px;
-    background: red;
-    transform:translate(100px, 10px) skewY(50deg);
-}
-.background-book2::after{
-    content: '';
-    position: absolute;
-    height: 20px;
-    width: 100%;
-    background: white;
-    transform:translate(-38px, 60px) skewX(40deg);
-}
-@media screen and (max-width:1020px){
-    .name{
-        font-size: 100px;
-    }
-    .background-book{
-        margin-top: 20vh;
-        margin-right: 50vw;
-    }
-}
-@media screen and (max-width:600px){
-    .name{
-        font-size: 50px;
-    }
-    .genre{
-         opacity: 1;
-    }
-    .background-book{
-        margin-top: 20vh;
-        margin-left: 10vw;
-    }
-    .close{
-        opacity: 1;
+    .quote{
+        margin-top: 0;
+        background: rgb(243, 13, 243);
     }
     .lists{
         position: fixed;
@@ -207,7 +291,7 @@ body{
         padding: 0;
         top: 0;
         right: -100%;
-        background: black;
+        background: white;
         height: 100%;
         width: 150px;
         display: flex;
@@ -216,17 +300,147 @@ body{
         z-index: 200;
         transition: all 2s ease-in-out;
     }
-    .open{
+     .open{
         right: 0;
     }
+    .list-link{
+        color: purple;
+    }
     .list{
-        padding-left: 10px;
-        padding-top: 25px;
         list-style: inside;
         color: white;
-        align-items: center;
     }
-    .list:hover{
-        transform: translateX(10px);
+    .close{
+        opacity: 1;
     }
+    .more{
+        opacity: 1;
+    }
+    .middle{
+        display: flex;
+        flex-direction: column;
+    }
+    .middle-left{
+       font-weight: bolder;
+       color: rgb(248, 7, 248);
+       font-size: 10vw;
+       font-family: cursive;
+    }
+    .middle-right{
+       display: flex;
+       flex-direction: column;
+       padding: 0;
+       align-items: center;
+       justify-items: center;
+    }
+    .bottom{
+       display: flex;
+       flex-direction: column;
+       height: fit-content;
+       width: fit-content;
+       padding-top: 70px;
+       padding-left: 5vw;
+       padding-bottom: 5vh;
+}
+    .bottom-border{
+        padding-top: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+}
+    .citation{
+        background: rgb(248, 7, 248);
+    }
+    .books{
+    background: url(sixteen-miles-out-3CA_-xcpulY-unsplash.jpg) center center/cover;
+    color: transparent;
+    background-clip: text;
+    opacity: 1;
+    text-align: center;
+    animation: drop;
+    animation-timeline: view();
+}
+@keyframes drop{
+    from{transform: rotate(0deg);}
+    to{transform: rotate(360deg);}
+}
+.horror-link{
+    animation: slide-up;
+    animation-timeline: view();
+}
+.romance-link{
+    animation: slide-up;
+    animation-timeline: view();
+}
+.religious-link{
+    animation: slide-up;
+    animation-timeline: view();
+}
+.motivational-link{
+    animation: slide-up;
+    animation-timeline: view();
+}
+@keyframes slide-up{
+    from{transform: translateY(100%); opacity: 0;}
+    to{ transform: translateY(0); opacity: 1;}
+}
+.list{
+    margin-top: 30px;
+}
+.list:hover{
+    background: rgb(248, 183, 248);
+    transform: scaleY(-1);
+    overflow: hidden;
+}
+}
+/* guess what? */
+.guess{
+    background: rgb(247, 14, 247);
+    text-align: center;
+}
+.guess-text{
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-variant: small-caps;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,50%);
+    position: fixed;
+}
+/* appreciation */
+.aprreciation-container{
+    margin-top: 10px;
+}
+.first-text{
+    font-size: 5vw;
+}
+.btn{
+    height: 30px;
+    width: 100%;
+    background: rgb(245, 19, 245);
+    border-radius: 50px;
+}
+.socials{
+    position: absolute;
+    right: 20px;
+    text-align: center;
+    padding-top: 5px;
+}
+.bttn{
+    height: 30px;
+    width: 100%;
+    background: white;
+    border-radius: 50px;
+}
+/* about us */
+.abt-us{
+   background: rgb(248, 7, 248);
+   text-decoration: wavy;
+   text-align: center;
+}
+.abt{
+    margin: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 10vh;
 }
