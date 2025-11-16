@@ -4,6 +4,7 @@
   box-sizing: border-box;
   background-attachment: fixed;
 }
+
 .romance {
   position: relative;
   height: 100vh;
@@ -12,6 +13,7 @@
   background-image: url(mubariz-mehdizadeh-aNHKAogpTRU-unsplash.jpg);
   background-size: contain;
 }
+
 .romance::before {
   content: "";
   position: absolute;
@@ -30,6 +32,7 @@
   background-clip: text;
   font-size: 20vw;
 }
+
 #romance-books {
   position: relative;
   min-height: 100vh;
@@ -40,10 +43,12 @@
   animation: blurin linear both;
   animation-timeline: view();
 }
+
 @keyframes blurin {
   0% {
     filter: blur(5px);
   }
+
   45%,
   50%,
   55%,
@@ -51,28 +56,34 @@
   65% {
     filter: blur(0);
   }
+
   100% {
     filter: blur(0);
   }
 }
+
 @media screen and (max-width: 768px) {
   #romance-books {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
-  .romance{
+
+  .romance {
     background-size: cover;
   }
 }
+
 @media screen and (max-width: 480px) {
   #romance-books {
     padding: 0;
     display: flex;
     flex-direction: column;
+    grid-template-columns: none;
     align-items: center;
     justify-items: center;
   }
 }
+
 #book9 {
   position: relative;
   margin: 20px;
@@ -84,12 +95,14 @@
   justify-content: center;
   transform: skewY(-5deg);
 }
-.title9{
+
+.title9 {
   color: white;
   text-align: center;
   transform: translateY(10%);
 }
-.title9em{
+
+.title9em {
   font-size: xx-large;
   position: fixed;
   text-align: center;
@@ -98,6 +111,7 @@
   transform: translate(-50%, 50%);
   color: rgb(11, 243, 11);
 }
+
 #book9::before {
   content: "";
   position: absolute;
@@ -107,6 +121,7 @@
   background-size: contain;
   transform: translate(-68px, 2px) skewY(-20deg);
 }
+
 #book9::after {
   content: "";
   position: absolute;
@@ -115,6 +130,7 @@
   background: white;
   transform: translate(-8px, 150px) skewX(-60deg);
 }
+
 #book10 {
   position: relative;
   margin: 20px;
@@ -126,18 +142,21 @@
   justify-content: center;
   transform: skewY(-5deg);
 }
-.title10{
+
+.title10 {
   text-align: center;
 }
+
 #book10::before {
   content: "";
   position: absolute;
-   height: 102.5%;
-    width: 16px;
-    background: url(gala-iv-IuNrjFugD98-unsplash.jpg);
-    background-size: cover;
-    transform: translate(-68px, 2px) skewY(-20deg);
+  height: 102.5%;
+  width: 16px;
+  background: url(gala-iv-IuNrjFugD98-unsplash.jpg);
+  background-size: cover;
+  transform: translate(-68px, 2px) skewY(-20deg);
 }
+
 #book10::after {
   content: "";
   position: absolute;
@@ -146,6 +165,7 @@
   background: wheat;
   transform: translate(-8px, 150px) skewX(-60deg);
 }
+
 #book11 {
   position: relative;
   margin: 20px;
@@ -160,14 +180,16 @@
   color: rgb(241, 241, 65);
   text-align: center;
 }
+
 #book11::before {
   content: "";
   position: absolute;
-   height: 102.5%;
-    width: 16px;
-    background: url(shayna-douglas-EGn1FptbNUc-unsplash.jpg);
-    transform: translate(-68px, 2px) skewY(-20deg);
+  height: 102.5%;
+  width: 16px;
+  background: url(shayna-douglas-EGn1FptbNUc-unsplash.jpg);
+  transform: translate(-68px, 2px) skewY(-20deg);
 }
+
 #book11::after {
   content: "";
   position: absolute;
@@ -188,7 +210,8 @@
   justify-content: center;
   transform: skewY(-5deg);
 }
-.title12{
+
+.title12 {
   position: fixed;
   color: azure;
   background: black;
@@ -196,6 +219,7 @@
   width: 100%;
   top: 0;
 }
+
 #book12::before {
   content: "";
   position: absolute;
@@ -204,6 +228,7 @@
   background: url(darius-F8E2tks5N04-unsplash.jpg);
   transform: translate(-68px, 2px) skewY(-20deg);
 }
+
 #book12::after {
   content: "";
   position: absolute;
@@ -224,15 +249,17 @@
   justify-content: center;
   transform: skewY(-5deg);
 }
-.title13{
+
+.title13 {
   transform: translateY(60%);
   font-weight: lighter;
-   background: url(kelsey-curtis-aXYnU9mpit0-unsplash.jpg) no-repeat center center/cover;
+  background: url(kelsey-curtis-aXYnU9mpit0-unsplash.jpg) no-repeat center center/cover;
   color: transparent;
   background-clip: text;
   text-transform: lowercase;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+
 #book13::before {
   content: "";
   position: absolute;
@@ -242,6 +269,7 @@
   background-size: cover;
   transform: translate(-68px, 2px) skewY(-20deg);
 }
+
 #book13::after {
   content: "";
   position: absolute;
@@ -262,19 +290,22 @@
   justify-content: center;
   transform: skewY(-5deg);
 }
-.title14{
+
+.title14 {
   background: url(jeong-yejune-yscYtKfSH7g-unsplash.jpg) no-repeat center center/cover;
   color: transparent;
   background-clip: text;
 }
+
 #book14::before {
   content: "";
   position: absolute;
-   height: 102.5%;
-    width: 16px;
-    background: rgb(241, 40, 40);
-    transform: translate(-68px, 2px) skewY(-20deg);
+  height: 102.5%;
+  width: 16px;
+  background: rgb(241, 40, 40);
+  transform: translate(-68px, 2px) skewY(-20deg);
 }
+
 #book14::after {
   content: "";
   position: absolute;
@@ -289,27 +320,30 @@
   margin: 20px;
   height: 150px;
   width: 120px;
-  background: url(copycat-fragrances-KVr-EQndQhM-unsplash.jpg);
+  background: url(niek-doup-ewm6XrqDAzg-unsplash.jpg);
   background-size: cover;
   display: flex;
   justify-content: center;
   transform: skewY(-5deg);
 }
-.title15{
+
+.title15 {
   background: url(mubariz-mehdizadeh-aNHKAogpTRU-unsplash.jpg) no-repeat center center/cover;
   color: transparent;
   background-clip: text;
   transform: translateY(10%);
   font-size: larger;
 }
+
 #book15::before {
   content: "";
   position: absolute;
-   height: 102.5%;
-    width: 16px;
-    background: url(copycat-fragrances-KVr-EQndQhM-unsplash.jpg);
-    transform: translate(-68px, 2px) skewY(-20deg);
+  height: 102.5%;
+  width: 16px;
+  background: url(niek-doup-ewm6XrqDAzg-unsplash.jpg);
+  transform: translate(-68px, 2px) skewY(-20deg);
 }
+
 #book15::after {
   content: "";
   position: absolute;
@@ -330,7 +364,8 @@
   justify-content: center;
   transform: skewY(-5deg);
 }
-.title16{
+
+.title16 {
   position: fixed;
   right: 0;
   top: 25%;
@@ -338,7 +373,8 @@
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: white;
 }
-.title16span{
+
+.title16span {
   font-weight: bolder;
   font-size: 25px;
   position: fixed;
@@ -347,14 +383,16 @@
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   color: darkgreen;
 }
+
 #book16::before {
   content: "";
   position: absolute;
-   height: 102.5%;
-    width: 16px;
-    background: rgb(6, 8, 6);
-    transform: translate(-68px, 2px) skewY(-20deg);
+  height: 102.5%;
+  width: 16px;
+  background: rgb(6, 8, 6);
+  transform: translate(-68px, 2px) skewY(-20deg);
 }
+
 #book16::after {
   content: "";
   position: absolute;
@@ -363,9 +401,11 @@
   background: wheat;
   transform: translate(-8px, 150px) skewX(-60deg);
 }
+
 .story-container {
   display: none;
 }
+
 .show {
   position: absolute;
   display: flex;
@@ -378,32 +418,36 @@
   align-content: center;
   z-index: 200;
   text-align: center;
-  font-size: 3vw;
-} 
-.story{
-    background: pink;
-    height: fit-content;
-    width: 50%;
-    box-shadow: 0 0 50px 50px pink;
-    color: red;
-    display: flex;
-    text-align: center;
-    flex-direction: column;
-    animation: zoomin 2s linear;
-} 
-@keyframes zoomin{
-    from{
-        filter: blur(10px);
-    }
-    to{
-        filter: blur(0);
-    }
 }
-.completed{
-    background: red;
-    color: azure;
-    height: fit-content;
-    width: fit-content;
-    align-self: center;
-    cursor: pointer;
+
+.story {
+  background: pink;
+  height: fit-content;
+  width: 50%;
+  box-shadow: 0 0 10px 10px white;
+  color: red;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  animation: zoomin 1000ms linear;
+  transition: ease-in-out;
+}
+
+@keyframes zoomin {
+  from {
+    filter: blur(10px);
+  }
+
+  to {
+    filter: blur(0);
+  }
+}
+
+.completed {
+  background: red;
+  color: azure;
+  height: fit-content;
+  width: fit-content;
+  align-self: center;
+  cursor: pointer;
 }

@@ -57,6 +57,7 @@
     padding: 0;
     display: flex;
     flex-direction: column;
+    grid-template-columns: none;
     align-items: center;
     justify-items: center;
   }
@@ -356,21 +357,12 @@
   flex-direction: column;
   justify-content: center;
   align-content: center;
-  /* animation-name: blurin; */
-  animation-duration: 3s;
-  animation-timing-function: 1;
+  animation: comein 3s linear;
 }
-/* @keyframes blurin{
-    0%{
-        filter: blur(10px);
-    }
-    50%{
-        filter: blur(0);
-    }
-    100%{
-        filter: brightness(10px);
-    }
-} */
+@keyframes comein{
+   from{transform: translateX(-100%); opacity: 0;}
+   to{transform: translate(50%, 40vh); opacity: 1;}
+}
 .completed {
   background: blue;
   color: azure;

@@ -9,8 +9,8 @@
     height: 100vh;
     height: 100dvh;
     width: 100%;
-    background-image: url(rob-griffin-6mPH67fcaZs-unsplash.jpg);
-    background-size: cover;
+    background-image: url(rob-griffin-oP8QGyiaU-w-unsplash.jpg);
+    background-size: contain;
 }
 .horror::before{
     content: '';
@@ -63,6 +63,7 @@
     padding: 0;
     display: flex;
     flex-direction: column;
+    grid-template-columns: none;
     align-items: center;
     justify-items: center;
    } 
