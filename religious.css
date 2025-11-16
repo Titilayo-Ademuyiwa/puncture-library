@@ -39,28 +39,7 @@
     display: grid;
     background: linear-gradient(30deg,blue,white);
     grid-template-columns: repeat(4, 1fr);
-    animation: blurin linear both;
-    animation-timeline: view();
 }
-
-@keyframes blurin {
-    0% {
-        filter: blur(5px);
-    }
-
-    45%,
-    50%,
-    55%,
-    60%,
-    65% {
-        filter: blur(0);
-    }
-
-    100% {
-        filter: blur(0);
-    }
-}
-
 @media screen and (max-width:768px) {
     #religious-books {
         display: grid;
