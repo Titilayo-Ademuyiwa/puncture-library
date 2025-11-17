@@ -5,7 +5,7 @@
     background-attachment: fixed;
 }
 
-.religious{
+.religious {
     position: relative;
     height: 100vh;
     height: 100dvh;
@@ -13,7 +13,8 @@
     background-image: url(sonika-agarwal-M3nSVCteeOQ-unsplash.jpg);
     background-size: cover;
 }
-.religious::before{
+
+.religious::before {
     content: '';
     position: absolute;
     height: 100vh;
@@ -34,17 +35,17 @@
 
 #religious-books {
     position: relative;
-    min-height: 100vh;
     padding: 70px;
+    min-height: 100vh;
     display: grid;
-    background: linear-gradient(30deg,blue,white);
+    background: linear-gradient(30deg, white, blue);
     grid-template-columns: repeat(4, 1fr);
 }
+
 @media screen and (max-width:768px) {
     #religious-books {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        padding-bottom: 100px;
     }
 }
 
@@ -58,6 +59,7 @@
         justify-items: center;
     }
 }
+
 #book25 {
     position: relative;
     margin: 20px;
@@ -69,15 +71,17 @@
     justify-content: center;
     transform: skewY(-5deg);
 }
-.title25{
+
+.title25 {
     color: rgb(247, 22, 239);
     bottom: 0;
     position: fixed;
 }
+
 #book25::before {
     content: '';
     position: absolute;
-     height: 102.5%;
+    height: 102.5%;
     width: 16px;
     background: url(dewang-gupta-Mu3T3DmvQQw-unsplash.jpg);
     transform: translate(-68px, 2px) skewY(-20deg);
@@ -97,23 +101,25 @@
     margin: 20px;
     height: 150px;
     width: 120px;
-    background:url(aidah-kiirya-yjHL_J9alok-unsplash.jpg) ;
+    background: url(aidah-kiirya-yjHL_J9alok-unsplash.jpg);
     background-size: cover;
     display: flex;
     justify-content: center;
     transform: skewY(-5deg);
 }
-.title26{
+
+.title26 {
     text-align: center;
     color: white;
     transform: translateY(8%);
 }
+
 #book26::before {
     content: '';
     position: absolute;
     height: 102.5%;
     width: 16px;
-    background:url(aidah-kiirya-yjHL_J9alok-unsplash.jpg) ;
+    background: url(aidah-kiirya-yjHL_J9alok-unsplash.jpg);
     transform: translate(-68px, 2px) skewY(-20deg);
 }
 
@@ -137,14 +143,16 @@
     justify-content: center;
     transform: skewY(-5deg);
 }
-.title27{
+
+.title27 {
     color: wheat;
     transform: translateY(50%);
 }
+
 #book27::before {
     content: '';
     position: absolute;
-     height: 102.5%;
+    height: 102.5%;
     width: 16px;
     background: url(cullan-smith-BdTtvBRhOng-unsplash.jpg);
     transform: translate(-68px, 2px) skewY(-20deg);
@@ -170,14 +178,16 @@
     justify-content: center;
     transform: skewY(-5deg);
 }
-.title28{
+
+.title28 {
     color: burlywood;
     transform: translateY(50%);
 }
+
 #book28::before {
     content: '';
     position: absolute;
-     height: 102.5%;
+    height: 102.5%;
     width: 16px;
     background: url(adam-hornyak-tD8NE0lo42U-unsplash.jpg);
     transform: translate(-68px, 2px) skewY(-20deg);
@@ -203,7 +213,8 @@
     justify-content: center;
     transform: skewY(-5deg);
 }
-.title29{
+
+.title29 {
     position: fixed;
     bottom: 0%;
     text-align: center;
@@ -211,11 +222,13 @@
     font-weight: bolder;
     background: white;
     height: fit-content;
+    width: 100%;
 }
+
 #book29::before {
     content: '';
     position: absolute;
-     height: 102.5%;
+    height: 102.5%;
     width: 16px;
     background: url(menor-degu-H6e1J1XW4Fw-unsplash.jpg);
     transform: translate(-68px, 2px) skewY(-20deg);
@@ -235,22 +248,24 @@
     position: relative;
     height: 150px;
     width: 120px;
-    background:url(sam-moghadam-gH5yrgiw4Xw-unsplash.jpg) ;
+    background: url(sam-moghadam-gH5yrgiw4Xw-unsplash.jpg);
     background-size: contain;
     display: flex;
     justify-content: center;
     transform: skewY(-5deg);
 }
-.title30{
+
+.title30 {
     transform: translateY(40%);
     color: white;
 }
+
 #book30::before {
     content: '';
     position: absolute;
-     height: 102.5%;
+    height: 102.5%;
     width: 16px;
-    background:url(sam-moghadam-gH5yrgiw4Xw-unsplash.jpg) ;
+    background: url(sam-moghadam-gH5yrgiw4Xw-unsplash.jpg);
     transform: translate(-68px, 2px) skewY(-20deg);
 }
 
@@ -268,17 +283,18 @@
     margin: 20px;
     height: 150px;
     width: 120px;
-    background:url(sixteen-miles-out-3CA_-xcpulY-unsplash.jpg) ;
+    background: url(sixteen-miles-out-3CA_-xcpulY-unsplash.jpg);
     background-size: cover;
     display: flex;
     justify-content: center;
     transform: skewY(-5deg);
     color: rgb(250, 250, 4);
 }
+
 #book31::before {
     content: '';
     position: absolute;
-     height: 102.5%;
+    height: 102.5%;
     width: 16px;
     background: url(sixteen-miles-out-3CA_-xcpulY-unsplash.jpg);
     transform: translate(-68px, 2px) skewY(-20deg);
@@ -304,19 +320,23 @@
     justify-content: center;
     transform: skewY(-5deg);
 }
-.title32{
+
+.title32 {
     font-weight: bolder;
     color: antiquewhite;
-    transform: translateY(75%);
+    bottom: 0;
+    position: fixed;
 }
+
 #book32::before {
     content: '';
     position: absolute;
-     height: 102.5%;
+    height: 102.5%;
     width: 16px;
     background: url(boluwatife-oguns--Sh6nXFK1VU-unsplash.jpg);
     transform: translate(-68px, 2px) skewY(-20deg);
 }
+
 #book32::after {
     content: '';
     position: absolute;
@@ -325,23 +345,26 @@
     background: wheat;
     transform: translate(-8px, 150px) skewX(-60deg);
 }
-.story-container{
+
+.story-container {
     display: none;
 }
-.show{
+
+.show {
     position: absolute;
     display: flex;
     height: 100vh;
-    width:100%;
+    width: 100%;
     justify-items: center;
     align-items: center;
     justify-content: center;
     align-content: center;
-    background: linear-gradient(10deg,white, blue);
+    background: linear-gradient(10deg, white, blue);
     z-index: 200;
     transform-style: preserve-3d;
 }
-.story{
+
+.story {
     height: fit-content;
     width: 50%;
     color: white;
@@ -349,12 +372,16 @@
     text-align: center;
     flex-direction: column;
     transform-style: preserve-3d;
-    animation:reversing 4s forwards;
+    animation: reversing 4s forwards;
 }
-@keyframes reversing{
-    from{filter: blur(5px);}
+
+@keyframes reversing {
+    from {
+        filter: blur(5px);
+    }
 }
-.completed{
+
+.completed {
     background: rgb(117, 117, 247);
     color: azure;
     height: fit-content;
